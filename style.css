@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.personal {
+    float: left;
+    position: fixed;
+    width: 360px;
+    height: 960px;
+    background-color: #e2ebe9dd;
+}
+
+.description {
+    float: right;
+    width: 840px;
+    height: 800px;
+    
+}
+.link {
+    display: flex;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.link__item > a {
+    margin-left: 8px;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.link__item:hover > a{
+    color:#2d25ba;
+}
+
+.footer__list > li {
+    display: flex;
+    justify-content: center;
+}
+
+.footer__item > a{
+    color: #000;
+}
+
+.personal__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.personal__image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.information_name {
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.footer__copyright {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 16px;
+}
+
+.footer__made {
+    font-size: 12px;
+    text-align: center;
+}
+
+.footer__item > a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.footer__item:hover > a{
+    color:#2d25ba;
+}
+
+.description #home, #about, #skills,#contact{
+    background-color: #f3efef;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 840px;
+    height: 500px;
+    background-image: url(https://wallpapers.com/images/high/textured-blue-backgrounds-udpla9k5opifb3bk.webp);
+}
+
+.home__item {
+    margin-left: 12px;
+    margin-right: 12px;
+    color: #fff;
+
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 840px;
+    height: 600px;
+}
+
+.about__title {
+    flex-direction: initial;
+    font-size: 20px;
+}
+
+.about__title:hover{
+    color: #9d9696;
+    cursor: pointer;
+}
+
+.skills_title:hover{
+    color: #9d9696;
+    cursor: pointer;
+}
+
+.about__paragraph  {
+    margin-top: 16px;
+    margin-left: 36px;
+    margin-right: 12px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 840px;
+    height: 600px;
+}
+
+.skills_item {
+    font-size: 18px;
+    margin-top: 16px;
+    text-align: start;
+}
+
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 840px;
+    height: 300px;
+}
+
+
+
+  /* Define the keyframes */
+@keyframes slideFromLeft {
+    0% { transform: translateX(-20%); } /* Start off-screen to the left */
+    100% { transform: translateX(0); } /* Move to the original position */
+  }
+  
+  /* Apply the animation to the text */
+  .text-animation {
+    animation: slideFromLeft 3s linear infinite; /* Slide from left to right every 3 seconds, and repeat infinitely */
+}
